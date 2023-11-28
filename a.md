@@ -20,3 +20,12 @@
         git pull origin main 
         git merge feature/featureA 
         git push origin main 
+
+3. Testear los desarrollos:
+
+        git checkout main 
+        git pull origin main 
+        git checkout -b uat/testing     
+
+        git merge feature/featureA 
+        git merge feature/featureB 
