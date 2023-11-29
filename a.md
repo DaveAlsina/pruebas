@@ -50,3 +50,20 @@
             git pull origin uat
             git merge release/v1.0
             git push origin uat
+
+5. Solucionar error
+
+            # Crear rama de corrección
+            git checkout uat
+            git pull origin uat
+            git checkout -b bugfix/incident-fix
+
+            # Realizar correcciones y confirmar
+            git add .
+            git commit -m "Corregir incidencia en pruebas de aceptación de usuario final"
+
+            # Fusionar la rama de corrección con uat/testing
+            git checkout uat
+            git merge bugfix/incident-fix
+            git push origin uat
+
